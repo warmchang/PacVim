@@ -1,4 +1,4 @@
-#ifdef __APPLE__
+#if (defined __APPLE__) || (defined __WINDOWS__)
 #include <ncursesw/cursesw.h>
 #else
 #include <cursesw.h>
@@ -27,7 +27,7 @@ void printAtBottom(std::string msg);
 void winGame();
 void loseGame();
 
-// 
+//
 bool isInside(int x, int y, std::string direction);
 
 // check to see if the player can move there

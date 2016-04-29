@@ -1,4 +1,4 @@
-#ifdef __APPLE__
+#if (defined __APPLE__) || (defined __WINDOWS__)
 #include <ncursesw/cursesw.h>
 #else
 #include <cursesw.h>
